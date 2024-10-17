@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: azure;
+        font-family: "Times New Roman";
+      }
+      h1 {
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click the button below to get the answer of 4 * 5-</h1>
+    <button onclick="multiply(4)">Click me!</button>
+    <p id="result"></p>
+
+    <script>
+      function multiply(a, b) {
+        if (b === undefined) {
+          alert("The value of b is undefined");
+          b = 5;
+        }
+        var result = a * b;
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
